@@ -1,0 +1,27 @@
+@font-face{
+  font-family: Bariol;
+  src: url(../fonts/Bariol_Regular);
+}
+
+@font-face{
+  font-family: Bariol;
+  src: url(../fonts/Bariol_Regular_Italic);
+  font-style: italic;
+}
+
+body{
+  font-family: Bariol;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: auto;
+  border: 1px solid green;
+  margin-bottom: 40px;
+}
+
+h1, h2{
+  text-align: center;
+}
