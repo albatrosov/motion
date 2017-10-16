@@ -1,0 +1,31 @@
+@import '../variables'; 
+
+#features{
+  background-color: #232324;
+  h2{
+    padding: 40px 0 20px;
+    font-size: 40px;
+  }
+  h6{
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: $dark-red;
+  }
+  .feature{
+    text-align: center;
+    img{
+      display: block;
+      margin: auto;
+    }
+    span{
+      display: block;
+      margin: 20px 0 10px;
+      font-size: 30px;
+    }
+    p{
+      font-size: 18px;
+      color: $dark-red;
+      margin-bottom: 25px;
+    }
+  }
+}

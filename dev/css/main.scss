@@ -11,6 +11,7 @@
 
 body{
   font-family: Bariol;
+  color: #fff;
 }
 
 .container{
@@ -22,6 +23,8 @@ body{
   margin-bottom: 40px;
 }
 
-h1, h2{
+h1, h2, h6{
   text-align: center;
+  margin: 0;
+  padding: 0;
 }

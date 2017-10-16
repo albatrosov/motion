@@ -11,6 +11,7 @@
 
 body {
 	font-family: Bariol;
+	color: #fff;
 }
 
 .container {
@@ -27,16 +28,55 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h6 {
 	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 
 
 
+#features {
+	background-color: #232324;
+}
+
+#features h2 {
+	padding: 40px 0 20px;
+	font-size: 40px;
+}
+
+#features h6 {
+	margin-bottom: 40px;
+	font-size: 20px;
+	color: #e74c3c;
+}
+
+#features .feature {
+	text-align: center;
+}
+
+#features .feature img {
+	display: block;
+	margin: auto;
+}
+
+#features .feature span {
+	display: block;
+	margin: 20px 0 10px;
+	font-size: 30px;
+}
+
+#features .feature p {
+	font-size: 18px;
+	color: #e74c3c;
+	margin-bottom: 25px;
+}
+
+
 #header {
 	background-color: #f56262;
-	color: #fff;
 }
 
 #header .container {
@@ -99,5 +139,11 @@ h2 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	color: #fff;
+}
+
+
+#top-slider {
+	height: 200px;
+	color: #000;
 }
 
