@@ -1,0 +1,54 @@
+@import '../variables.scss';
+
+#team{
+  background-color: $light-green;
+  h6{
+    color: #232324;
+  }
+  .team-member{
+    width: 24%;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    padding: 20px 12px 10px;
+    border-radius: 6px;
+    text-align: center; 
+    background-color: #fff;
+    img{
+      display: block;
+      margin: 0 auto;
+      border: 10px solid $light-green;
+      border-radius: 100%;
+    }
+    span{
+      display: block;
+      margin: 24px 0 10px;
+      color: $light-green;
+      font-size: 25px;
+    }
+    p{
+      margin: 10px 0 26px;
+      color: $dark-red;
+      font-size: 18px;
+    }
+    button{
+      position: relative;
+      width: 100%;
+      height: 46px;
+      border: 0;
+      border-right: 6px;
+      background-color: $light-green;
+      font-size: 25px;
+      letter-spacing: 3px;
+      color: #fff;
+      &:hover{
+        cursor: pointer;
+      }
+      i{
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        font-size: 30px;
+      }
+    }
+  }
+}
