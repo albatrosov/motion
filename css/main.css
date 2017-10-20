@@ -430,7 +430,54 @@ span {
 
 
 #top-slider {
-	height: 200px;
-	color: #000;
+	background-color: #eb4f4e;
+}
+
+#top-slider h1 {
+	font-size: 60px;
+	letter-spacing: 8px;
+	padding: 50px 0 20px;
+}
+
+#top-slider h6 {
+	font-size: 20px;
+}
+
+#top-slider .top-slider {
+	padding-bottom: 40px; /* big buttons, no circle */ /* arrow color */ /* hide disabled button */ /* position dots up a bit */ /* dots are lines */
+}
+
+#top-slider .top-slider .flickity-prev-next-button {
+	width: 100px;
+	height: 100px;
+	background: transparent;
+}
+
+#top-slider .top-slider .flickity-prev-next-button:hover {
+	background: transparent;
+}
+
+#top-slider .top-slider .flickity-prev-next-button .arrow {
+	fill: white;
+}
+
+#top-slider .top-slider .flickity-prev-next-button.no-svg {
+	color: white;
+}
+
+#top-slider .top-slider .flickity-prev-next-button:disabled {
+	display: none;
+}
+
+#top-slider .top-slider .flickity-page-dots {
+	bottom: 22px;
+}
+
+#top-slider .top-slider .flickity-page-dots .dot {
+	height: 4px;
+	width: 40px;
+	margin: 0;
+	border-radius: 0;
+	background-color: #fff;
 }
 
