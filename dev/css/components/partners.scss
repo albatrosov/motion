@@ -3,4 +3,34 @@
 #partners{
   background-color: $light-grey;
   color: #000;
+  h6{
+    color: darken($light-green, 10%);
+  }
+  .partners-slider{
+    padding-bottom: 90px;
+    .carousel-cell{
+      margin-right: 40px;
+    }
+    /* big buttons, no circle */
+    .flickity-prev-next-button {
+      margin-top: -40px;
+      width: 100px;
+      height: 100px;
+      background: transparent;
+    }
+    .flickity-prev-next-button:hover {
+      background: transparent;
+    }
+    /* arrow color */
+    .flickity-prev-next-button .arrow {
+      fill: green;
+    }
+    .flickity-prev-next-button.no-svg {
+      color: green;
+    }
+    /* position dots up a bit */
+    .flickity-page-dots {
+      bottom: 40px;
+    }
+  }
 }

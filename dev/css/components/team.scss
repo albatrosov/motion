@@ -2,6 +2,7 @@
 
 #team{
   background-color: $light-green;
+  padding-bottom: 20px;
   h6{
     color: #232324;
   }
@@ -39,10 +40,6 @@
       background-color: $light-green;
       font-size: 25px;
       letter-spacing: 3px;
-      color: #fff;
-      &:hover{
-        cursor: pointer;
-      }
       i{
         position: absolute;
         left: 10px;

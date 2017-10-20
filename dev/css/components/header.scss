@@ -6,6 +6,10 @@
   .logo{
     margin: auto 0;
     font-size: 35px;
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
     img{      
       height: 37px;
       width: 46px;
@@ -17,6 +21,7 @@
     &__subtitle{
       display: block;
       font-size: 17px;
+      line-height: 1.15;
     }
   }
   nav{
@@ -36,13 +41,10 @@
           border-radius: 6px;
         }
         a{
-          display: block;
           padding: 0 10px;
           line-height: 30px;
-          text-decoration: none;
           font-family: Arial, Helvetica, sans-serif;
           font-weight: 700;
-          color: #fff;
         }
       }
     }

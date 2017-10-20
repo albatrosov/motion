@@ -1,9 +1,13 @@
 $(function(){
 
   $('.top-slider').flickity({
-    // pageDots: false,
+    autoPlay: true
+  })
+
+  $('.partners-slider').flickity({
     autoPlay: true,
-    adaptiveHeight: true
+    groupCells: true,
+    groupCells: 4
   })
 
 })
