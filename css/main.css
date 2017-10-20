@@ -80,6 +80,76 @@ span {
 }
 
 
+#footer #copyright {
+	background-color: #000;
+}
+
+#footer #copyright .container {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#footer #copyright .copyright {
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+#footer #copyright .copyright span {
+	display: inline;
+	color: #e74c3c;
+}
+
+#footer #copyright .social {
+	margin: auto 0;
+}
+
+#footer #copyright .social__item {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	margin-right: 5px;
+	text-align: center;
+	background-color: #e74c3c;
+	font-size: 18px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+#footer #map {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+#footer #map .contacts {
+	position: absolute;
+	margin: auto 0;
+	width: 35%;
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+#footer #map .contacts span {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+#footer #map .contacts a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #e74c3c;
+}
+
+
 #header {
 	background-color: #f56262;
 }
@@ -156,6 +226,7 @@ span {
 #plans {
 	position: relative;
 	color: #000;
+	margin-bottom: 40px;
 }
 
 #plans .container {
