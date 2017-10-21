@@ -24,6 +24,9 @@
         text-align: center;
         background-color: $dark-red;
         font-size: 18px;
+        &:hover{
+          background-color: darken($dark-red, 15%);
+        }
         a{
           display: block;
           width: 100%;
@@ -55,6 +58,10 @@
         text-decoration: none;
         font-size: 20px;
         color: $dark-red;
+        &:hover{
+          color: darken($dark-red, 15%);
+          text-decoration: underline;
+        }
       }
     }
   }

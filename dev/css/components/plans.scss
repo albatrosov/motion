@@ -95,11 +95,12 @@
         vertical-align: text-top;
         font-weight: 100;
       }
-      button{
+      a{
         box-sizing: border-box;
         padding: 5px 20px;
+        width: 90px;
+        line-height: 30px;
         margin: auto 0;
-        border: 0;
         border-radius: 4px;
         background-color: #fff;
         font-family: Bariol;
@@ -107,12 +108,17 @@
         letter-spacing: 1px;
         font-weight: 700;
         color: $dark-grey;
-        cursor: pointer;
+        &:hover{
+          color: $dark-red;
+        }
       }
       &--important{
         background-color: $dark-red;
-        button{
+        a{
           color: $dark-red;
+          &:hover{
+            color: $dark-grey;
+          }
         }
       }
     }

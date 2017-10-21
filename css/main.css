@@ -168,6 +168,10 @@ a {
 	font-size: 18px;
 }
 
+#footer #copyright .social__item:hover {
+	background-color: #bf2718;
+}
+
 #footer #copyright .social__item a {
 	display: block;
 	width: 100%;
@@ -209,6 +213,11 @@ a {
 	text-decoration: none;
 	font-size: 20px;
 	color: #e74c3c;
+}
+
+#footer #map .contacts a:hover {
+	color: #bf2718;
+	text-decoration: underline;
 }
 
 
@@ -468,12 +477,13 @@ a {
 	font-weight: 100;
 }
 
-#plans .plan__price button {
+#plans .plan__price a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 5px 20px;
+	width: 90px;
+	line-height: 30px;
 	margin: auto 0;
-	border: 0;
 	border-radius: 4px;
 	background-color: #fff;
 	font-family: Bariol;
@@ -481,15 +491,22 @@ a {
 	letter-spacing: 1px;
 	font-weight: 700;
 	color: #616161;
-	cursor: pointer;
+}
+
+#plans .plan__price a:hover {
+	color: #e74c3c;
 }
 
 #plans .plan__price--important {
 	background-color: #e74c3c;
 }
 
-#plans .plan__price--important button {
+#plans .plan__price--important a {
 	color: #e74c3c;
+}
+
+#plans .plan__price--important a:hover {
+	color: #616161;
 }
 
 #plans .plan--important {
@@ -609,6 +626,10 @@ a {
 	background-color: #6cc372;
 	font-size: 25px;
 	letter-spacing: 3px;
+}
+
+#team .team-member a:hover {
+	background-color: #42a148;
 }
 
 #team .team-member a i {

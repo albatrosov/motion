@@ -55,6 +55,9 @@
       background-color: $light-green;
       font-size: 25px;
       letter-spacing: 3px;
+      &:hover{
+        background-color: darken($light-green, 15%);
+      }
       i{
         position: absolute;
         left: 10px;
