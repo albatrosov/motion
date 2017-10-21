@@ -33,11 +33,10 @@
   }
   nav{
     margin: auto 0;
-    width: 60%;
+    width: 50%;
     margin-right: -10px;
     ul{
       display: flex;
-      justify-content: space-between;
       li{
         display: block;
         list-style: none; 
@@ -68,6 +67,16 @@
     }
     ul{
       margin: 0;
+    }
+  }
+}
+
+// ==ADAPTIVE==
+
+@media (max-width: 980px){
+  #header{
+    .container{
+      justify-content: space-around;
     }
   }
 }

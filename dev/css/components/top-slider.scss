@@ -1,3 +1,5 @@
+@import '../mixins';
+
 #top-slider{
   margin-top: 110px;
   background-color: #eb4f4e;
@@ -13,30 +15,7 @@
   }
   .top-slider{
     padding-bottom: 40px;
-    /* big buttons, no circle */
-    .flickity-prev-next-button {
-      width: 100px;
-      height: 100px;
-      background: transparent;
-    }
-    .flickity-prev-next-button:hover {
-      background: transparent;
-    }
-    /* arrow color */
-    .flickity-prev-next-button .arrow {
-      fill: white;
-    }
-    .flickity-prev-next-button.no-svg {
-      color: white;
-    }
-    /* hide disabled button */
-    .flickity-prev-next-button:disabled {
-      display: none;
-    }
-    /* position dots up a bit */
-    .flickity-page-dots {
-      bottom: 22px;
-    }
+    @include sliderOptions(#fff, 22px);
     /* dots are lines */
     .flickity-page-dots .dot {
       height: 4px;
@@ -49,17 +28,6 @@
 }
 
 // ==ANIMATION==
-// @keyframes opacity{
-//   0%{
-//     opacity: 0;
-//     font-size: 25px
-//   }
-//   100%{
-//     font-size: 60px;
-//     opacity: 1;
-//   }
-// }
-
 @keyframes fade {
   from {
       opacity: 0;

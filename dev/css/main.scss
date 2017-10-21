@@ -10,7 +10,7 @@
 }
 
 body{
-  font-family: Bariol;
+  font-family: Bariol, Arial, Helvetica, sans-serif;
   color: #fff;
   background-color: #f56262;
 }
@@ -18,8 +18,9 @@ body{
 .container{
   display: flex;
   justify-content: space-between;
-  max-width: 960px;
+  width: 960px;
   margin: auto;
+  overflow: hidden;
 }
 
 h1, h2, h6{
@@ -51,4 +52,3 @@ a{
   color: #fff;
   text-decoration: none;
 }
-

@@ -5,8 +5,9 @@ var sass = require('gulp-sass');
 var autoPrefixer = require('gulp-autoprefixer');
 var cmq = require('gulp-merge-media-queries');
 var cleanCss = require('gulp-clean-css');
-let uglify = require('gulp-uglify-es').default;
+var uglify = require('gulp-uglify-es').default;
 var concat = require('gulp-concat');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('sass',function(){
     gulp.src(['dev/css/**/*.scss'])
@@ -43,6 +44,12 @@ gulp.task('js',function(){
         .pipe(uglify())
         .pipe(gulp.dest('js'))
 });
+
+gulp.task('imgmin', () =>
+gulp.src(['img/*', 'img/*/*'])
+    .pipe(imagemin())
+    .pipe(gulp.dest('img'))
+);
 
 gulp.task('default',function(){
     gulp.watch('dev/js/**/*.js',['js']);
