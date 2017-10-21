@@ -1,7 +1,14 @@
 #header{
-  background-color: #f56262;
+  // fixed top nav menu
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  transition: all .4s;
+  background-color: rgba(245, 98, 98, 1);
   .container{
     height: 110px;
+    transition: all .4s;
   }
   .logo{
     margin: auto 0;
@@ -20,7 +27,7 @@
     }
     &__subtitle{
       display: block;
-      font-size: 17px;
+      font-size: 18px;
       line-height: 1.15;
     }
   }
@@ -47,6 +54,20 @@
           font-weight: 700;
         }
       }
+    }
+  }
+}
+
+// minimized nav menu 
+#header.header--min{  
+  background-color: rgba(245, 98, 98, .8);
+  .container{
+    height: 50px;
+    .logo__subtitle{
+      display: none;
+    }
+    ul{
+      margin: 0;
     }
   }
 }

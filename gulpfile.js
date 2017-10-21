@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 var autoPrefixer = require('gulp-autoprefixer');
 var cmq = require('gulp-merge-media-queries');
 var cleanCss = require('gulp-clean-css');
-var uglify = require('gulp-uglify');
+let uglify = require('gulp-uglify-es').default;
 var concat = require('gulp-concat');
 
 gulp.task('sass',function(){

@@ -1,4 +1,5 @@
 @import '../variables'; 
+@import '../mixins'; 
 
 #features{
   background-color: #232324;
@@ -22,5 +23,28 @@
       color: $dark-red;
       margin-bottom: 25px;
     }
+  }
+}
+
+#features.animation{
+  .feature{
+    span{
+      animation: descent 2s ease;
+    }
+    p{
+      animation: descent 2s ease;
+    }
+  }
+}
+
+//  ==ANIMATION==
+@keyframes descent {
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

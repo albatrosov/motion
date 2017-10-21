@@ -1,12 +1,15 @@
 #top-slider{
+  margin-top: 110px;
   background-color: #eb4f4e;
   h1{
     font-size: 60px;
     letter-spacing: 8px;
     padding: 50px 0 20px;
+    animation: fade 2s ease;
   }
   h6{
     font-size: 20px;
+    animation: rising 2s ease;
   }
   .top-slider{
     padding-bottom: 40px;
@@ -42,5 +45,39 @@
       border-radius: 0;
       background-color: #fff;
     }
+  }
+}
+
+// ==ANIMATION==
+// @keyframes opacity{
+//   0%{
+//     opacity: 0;
+//     font-size: 25px
+//   }
+//   100%{
+//     font-size: 60px;
+//     opacity: 1;
+//   }
+// }
+
+@keyframes fade {
+  from {
+      opacity: 0;
+      transform: scale(.4);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+@keyframes rising {
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
