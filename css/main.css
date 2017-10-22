@@ -15,6 +15,7 @@ body {
 	background-color: #f56262;
 	-webkit-transition: all .2s;
 	transition: all .2s;
+	overflow-x: hidden;
 }
 
 .container {
@@ -184,6 +185,10 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: wrap row;
+	flex-flow: wrap row;
 }
 
 #footer #copyright .copyright {
@@ -260,6 +265,14 @@ a {
 #footer #map .contacts a:hover {
 	color: #bf2718;
 	text-decoration: underline;
+}
+
+@media (max-width: 420px) {
+
+#map .contacts {
+	min-width: 80%;
+}
+
 }
 
 
@@ -655,6 +668,13 @@ a {
 }
 
 @media (max-width: 960px) {
+
+#plans .container {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
 
 #plans .plan {
 	margin-bottom: 30px;

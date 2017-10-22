@@ -153,6 +153,9 @@
 //  ==ADAPTIVE==
 @media (max-width: 960px){
   #plans{
+    .container{
+      flex-flow: row wrap;
+    }
     .plan{
       margin-bottom: 30px;
       i{

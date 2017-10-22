@@ -5,6 +5,7 @@
     background-color: #000;
     .container{
       justify-content: space-between;
+      flex-flow: wrap row;
     }
     .copyright{
       font-size: 18px;
@@ -63,6 +64,16 @@
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+//  ==ADAPTIVE==
+
+@media (max-width: 420px){
+  #map{
+    .contacts{
+      min-width: 80%;
     }
   }
 }
