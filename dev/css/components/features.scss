@@ -54,7 +54,8 @@
 // ==ADAPTIVE==
 @media (max-width: 600px){
   #features{
-    .container{
+    .container{      
+      flex-flow: row wrap;  
       flex-direction: column;
     }
     .feature{
