@@ -97,12 +97,13 @@
       ul{
         display: none;
         padding: 0;
+        margin-top: 0px;
         &.mobile{
           animation: menuToggle .6s;
           display: block;
           position: absolute;
           right: 0;
-          margin-top: 10px;
+          top: 50px;
           height: 100vh;
           background-color: #000;
           li{

@@ -13,12 +13,18 @@ body {
 	font-family: Bariol, Arial, Helvetica, sans-serif;
 	color: #fff;
 	background-color: #f56262;
+	-webkit-transition: all .2s;
+	transition: all .2s;
 }
 
 .container {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -59,12 +65,12 @@ a {
 }
 
 .mobile-overlay {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	background-color: #000;
 	opacity: .5;
-	z-index: 1;
+	z-index: 2;
 	display: none;
 }
 
@@ -117,6 +123,26 @@ a {
 #features.animation .feature p {
 	-webkit-animation: descent 2s ease;
 	animation: descent 2s ease;
+}
+
+@media (max-width: 600px) {
+
+#features .container {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#features .feature {
+	margin: 20px 0;
+}
+
+#features .feature p {
+	width: 60%;
+	margin: 0 auto;
+}
+
 }
 
 @-webkit-keyframes descent {
@@ -355,6 +381,7 @@ a {
 #header nav ul {
 	display: none;
 	padding: 0;
+	margin-top: 0px;
 }
 
 #header nav ul.mobile {
@@ -363,7 +390,7 @@ a {
 	display: block;
 	position: absolute;
 	right: 0;
-	margin-top: 10px;
+	top: 50px;
 	height: 100vh;
 	background-color: #000;
 }
@@ -487,7 +514,7 @@ a {
 }
 
 #plans .plan {
-	width: 30%;
+	width: 300px;
 	text-align: center;
 	overflow: hidden;
 	border-radius: 6px;
@@ -629,6 +656,26 @@ a {
 	animation: rising 1.3s ease;
 }
 
+@media (max-width: 960px) {
+
+#plans .plan {
+	margin-bottom: 30px;
+}
+
+#plans .plan i {
+	display: none;
+}
+
+}
+
+@media (max-width: 600px) {
+
+#plans .plan:first-child {
+	margin-top: 22px;
+}
+
+}
+
 @-webkit-keyframes rising {
 
 0% {
@@ -672,7 +719,6 @@ a {
 }
 
 #team .team-member {
-	width: 24%;
 	margin-bottom: 25px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -702,11 +748,12 @@ a {
 	border: 10px solid #6cc372;
 	border-radius: 100%;
 	margin: 0 auto;
-	width: 70%;
+	width: 85%;
 }
 
 #team .team-member__portrait img {
 	display: block;
+	width: 100%;
 }
 
 #team .team-member span {
@@ -747,6 +794,19 @@ a {
 #team.animation .team-member img {
 	-webkit-animation: imgAppearing 3s ease;
 	animation: imgAppearing 3s ease;
+}
+
+@media (max-width: 980px) {
+
+#team .container {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
 }
 
 @-webkit-keyframes imgAppearing {

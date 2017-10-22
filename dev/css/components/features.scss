@@ -26,6 +26,8 @@
   }
 }
 
+
+//  ==ANIMATION==
 #features.animation{
   .feature{
     span{
@@ -37,7 +39,6 @@
   }
 }
 
-//  ==ANIMATION==
 @keyframes descent {
   0%{
     opacity: 0;
@@ -46,5 +47,22 @@
   100%{
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+
+// ==ADAPTIVE==
+@media (max-width: 600px){
+  #features{
+    .container{
+      flex-direction: column;
+    }
+    .feature{
+      margin: 20px 0;
+      p{
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
   }
 }

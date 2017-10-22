@@ -45,9 +45,7 @@ $(function(){
   })
 
   $('.partners-slider').flickity({
-    autoPlay: true,
-    groupCells: true,
-    groupCells: 4
+    autoPlay: true
   })
 
 })
