@@ -49,3 +49,11 @@
     transform: translateY(0px);
   }
 }
+
+// ==ADAPTIVE==
+
+@media (max-width: 767px){
+  #top-slider{
+    margin-top: 50px;
+  }
+}
